@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+           
+        }
+        body {
+            background-color: #e6ccf1;
+            color: #333;
+        }
+        h1, h2, h3 {
+            font-weight: 600;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #7c2e8e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5em;
+            animation: fadeIn 2s ease-out;
+        }
+
+        /* Profile Section */
+        .profile {
+            text-align: center;
+            margin: 40px;
+            animation: fadeIn 2s ease-out;
+        }
+        .profile img {
+            border-radius: 30%;
+            width: 150px;
+            height: 150px;
+            margin-bottom: 10px;
+        }
+        .profile img:hover {
+            transform: scale(1.1);
+        }
+        .profile h2 {
+            font-size: 2em;
+        }
+        .profile p {
+            font-size: 1.1em;
+            color: #777;
+        }
+
+        /* About Section */
+        .about {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: fadeInUp 2s ease-out;
+        }
+        .about p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #555;
+            animation: fadeInUp 2s ease-out;
+        }
+
+        /* Skills Section */
+        .skills {
+            background-color: #f9f9f9;
+            padding: 50px 20px;
+        }
+        .skills h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .skills .skill-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .skills .skill {
+            background-color: #7c2e8e;
+            color: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            text-align: center;
+            width: 180px;
+            transition: transform 0.3s;
+        }
+        .skills .skill:hover {
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+        .projects h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .projects .project-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .projects .project {
+            width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .projects .project:hover {
+            transform: scale(1.05);
+        }
+        .projects .project img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .projects .project-info {
+            padding: 20px;
+            background-color: #7c2e8e;
+            color: white;
+        }
+        .projects .project-info h3 {
+            font-size: 1.5em;
+        }
+        .projects .project-info p {
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 50px 20px;
+            background-color: #f4f7fc;
+            text-align: center;
+        }
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        .contact .contact-info {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .contact .contact-info a {
+            margin: 0 15px;
+            color: #7c2e8e;
+            font-size: 1.5em;
+            transition: color 0.3s;
+        }
+        .contact .contact-info a:hover {
+            color: #f43f2b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #140e17;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Tridev Singh</h1>
+    <p>Frontend Developer & Kotlin Enthusiast</p>
+</header>
+
+<!-- Profile Section -->
+<div class="profile">
+    <img src="images/gagan1.png" alt="Your Image">
+    <h2>Tridev Singh</h2>
+    <p>Frontend Developer | Kotlin Developer</p>
+</div>
+
+<!-- About Section -->
+<div class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate frontend developer with a love for creating beautiful and functional web applications. I have experience in building responsive websites using HTML, CSS, JavaScript, and am constantly learning new technologies like Kotlin. I enjoy working on projects that challenge my creativity and problem-solving skills. And really I want to do something in this field .
+    </p>
+</div>
+
+<!-- Skills Section -->
+<div class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-container">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">c and  c++</div>
+        <div class="skill">Node.js</div>
+        <div class="skill">Kotlin</div>
+    </div>
+</div>
+
+<!-- Projects Section -->
+<div class="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <div class="project">
+            <img src="images/school.png" alt="Project 1">
+            <div class="project-info">
+                <h3>Project 1</h3>
+                <p>Build a school Website for show hidden talents of that school childrens and for show the school importance in the society and in the locality </p>
+            </div>
+        </div> 
+        <div class="project">
+            <img src="images/random.png" alt="Project 2">
+            <div class="project-info">
+                <h3>Project 2</h3>
+                <p>Make a website for Random images, here you can see the random images of dogs ,cats ,fox and also read some random quotation.</p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div class="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-info">
+        <a href="mailto:singhtridev2006@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:8384814107"><i class="fas fa-phone"></i></a>
+        <a href="https://wa.me/8384814107"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/gaganthakur_302"><i class="fab fa-instagram"></i></a>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Tridev Singh. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
